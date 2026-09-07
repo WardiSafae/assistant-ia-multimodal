@@ -1,0 +1,14 @@
+# Transcription (Speech-to-Text)
+faster-whisper==1.0.3
+
+# Embeddings + base vectorielle
+sentence-transformers==3.0.1
+faiss-cpu==1.8.0
+
+# Orchestration LLM
+langchain==0.2.16
+langchain-community==0.2.16
+
+# Utilitaires
+python-dotenv==1.0.1
+numpy==1.26.4

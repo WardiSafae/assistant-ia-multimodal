@@ -1,0 +1,19 @@
+# Environnements Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Modèles et index téléchargés/générés localement
+*.faiss
+*.pkl
+models/
+whisper_cache/
+
+# Fichiers audio de test (souvent volumineux)
+*.wav
+*.mp3
+!data/corpus/**
+
+# OS
+.DS_Store
