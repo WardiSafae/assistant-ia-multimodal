@@ -3,7 +3,7 @@ faster-whisper==1.0.3
 
 # Embeddings + base vectorielle
 sentence-transformers==3.0.1
-faiss-cpu==1.8.0
+faiss-cpu==1.9.0  # Changé de 1.8.0 à 1.9.0
 
 # Orchestration LLM
 langchain==0.2.16

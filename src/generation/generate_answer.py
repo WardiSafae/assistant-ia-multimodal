@@ -10,9 +10,11 @@ Le fournisseur LLM est configurable via les variables d'environnement
 """
 
 import os
+import time
 
 from dotenv import load_dotenv
-from langchain_community.chat_models import ChatOpenAI
+from langchain_mistralai import ChatMistralAI  # Changé ici
+# from langchain.schema import HumanMessage
 
 load_dotenv()
 
@@ -42,10 +44,9 @@ def _get_llm():
     if provider == "mistral" and not base_url:
         base_url = "https://api.mistral.ai/v1"
 
-    return ChatOpenAI(
+    return ChatMistralAI(
         model=model,
         api_key=api_key,
-        base_url=base_url,
         temperature=0.2,
     )
 
@@ -57,6 +58,9 @@ def generate_answer(question: str, context: str) -> str:
     vectoriel ou du backend graphe de connaissances — c'est ce qui rend le
     pipeline modulaire).
     """
+
+    time.sleep(3)
+
     llm = _get_llm()
     prompt = PROMPT_TEMPLATE.format(context=context, question=question)
     response = llm.invoke(prompt)
