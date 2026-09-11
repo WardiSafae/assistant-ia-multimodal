@@ -13,7 +13,7 @@ import os
 import time
 
 from dotenv import load_dotenv
-from langchain_mistralai import ChatMistralAI  # Changé ici
+# from langchain_mistralai import ChatMistralAI  # Changé ici
 # from langchain.schema import HumanMessage
 
 load_dotenv()
@@ -41,14 +41,22 @@ def _get_llm():
     api_key = os.getenv("LLM_API_KEY", "not-needed")
     base_url = os.getenv("LLM_BASE_URL") or None
 
-    if provider == "mistral" and not base_url:
-        base_url = "https://api.mistral.ai/v1"
-
-    return ChatMistralAI(
-        model=model,
-        api_key=api_key,
-        temperature=0.2,
-    )
+    if provider == "mistral":
+        from langchain_mistralai import ChatMistralAI
+        return ChatMistralAI(
+            model=model,
+            api_key=api_key,
+            temperature=0.2,
+        )
+    else:
+        # openai_compatible : Ollama, vLLM, etc.
+        from langchain_openai import ChatOpenAI
+        return ChatOpenAI(
+            model=model,
+            api_key=api_key or "not-needed",
+            base_url=base_url,
+            temperature=0.2,
+        )
 
 
 def generate_answer(question: str, context: str) -> str:
@@ -59,7 +67,7 @@ def generate_answer(question: str, context: str) -> str:
     pipeline modulaire).
     """
 
-    time.sleep(3)
+    # time.sleep(3)
 
     llm = _get_llm()
     prompt = PROMPT_TEMPLATE.format(context=context, question=question)
