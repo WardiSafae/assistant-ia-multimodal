@@ -3,11 +3,19 @@ faster-whisper==1.0.3
 
 # Embeddings + base vectorielle
 sentence-transformers==3.0.1
-faiss-cpu==1.9.0  # Changé de 1.8.0 à 1.9.0
+faiss-cpu>=1.9.0
 
-# Orchestration LLM
-langchain==0.2.16
-langchain-community==0.2.16
+# Orchestration LLM — versions compatibles Python 3.11+
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-mistralai>=0.2.0
+langchain-openai>=0.2.0
+
+# Backend graphe de connaissances
+networkx==3.3
+
+# Synthèse vocale
+gTTS==2.5.3
 
 # Utilitaires
 python-dotenv==1.0.1

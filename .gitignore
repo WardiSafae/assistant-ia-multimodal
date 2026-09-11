@@ -1,6 +1,6 @@
 # Environnements Python
-venv/
 venv311/
+venv/
 __pycache__/
 *.pyc
 .env
@@ -15,6 +15,7 @@ whisper_cache/
 *.wav
 *.mp3
 !data/corpus/**
+reports/audio_samples/
 
 # OS
 .DS_Store

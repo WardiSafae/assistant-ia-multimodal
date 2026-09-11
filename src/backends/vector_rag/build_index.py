@@ -4,9 +4,9 @@ Construction de l'index vectoriel (FAISS) à partir des documents du corpus.
 À exécuter une fois avant d'utiliser le backend RAG :
     python -m src.backends.vector_rag.build_index
 
-Angle "candidature Sia" : ce module démontre la construction d'une base
-vectorielle pour un système de Retrieval-Augmented Generation (RAG), l'un des
-axes explicitement cités dans l'offre (LLM, RAG, agents autonomes).
+Ce module démontre la construction d'une base vectorielle pour un système de
+Retrieval-Augmented Generation (RAG) : indexation d'un corpus de documents,
+recherche par similarité sémantique.
 """
 
 import glob

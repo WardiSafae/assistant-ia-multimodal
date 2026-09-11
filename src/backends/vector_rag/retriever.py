@@ -4,8 +4,9 @@ Backend de récupération vectorielle (RAG).
 Expose l'interface commune attendue par le pipeline principal :
     query(question: str) -> str   (contexte pertinent pour répondre à la question)
 
-Angle "candidature Sia" : c'est le cœur du système RAG, comparable à ce que
-décrit l'offre (bases vectorielles, développement de chaînes RAG).
+C'est le cœur d'un système RAG classique : recherche par similarité
+vectorielle, puis assemblage des passages les plus pertinents en contexte
+pour le LLM de génération.
 """
 
 import os

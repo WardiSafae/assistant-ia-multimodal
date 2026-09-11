@@ -1,0 +1,156 @@
+{
+  "results": [
+    {
+      "category": "phrases_courtes",
+      "reference_text": "Bonjour, comment allez-vous ?",
+      "transcribed_text": "Bonjour, comment allez-vous ?",
+      "wer": 0.0,
+      "verdict": "Conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\phrases_courtes_0.mp3"
+    },
+    {
+      "category": "phrases_courtes",
+      "reference_text": "Le vol est prêt au décollage.",
+      "transcribed_text": "Le vol est prêt au décollage.",
+      "wer": 0.0,
+      "verdict": "Conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\phrases_courtes_1.mp3"
+    },
+    {
+      "category": "phrases_courtes",
+      "reference_text": "Merci de votre attention.",
+      "transcribed_text": "Merci de votre attention.",
+      "wer": 0.0,
+      "verdict": "Conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\phrases_courtes_2.mp3"
+    },
+    {
+      "category": "phrases_longues",
+      "reference_text": "La direction technique et ingénierie assure le développement, la conception et le suivi des équipements associés dans le respect des normes de sécurité en vigueur.",
+      "transcribed_text": "La direction technique est ingénirie à sûr le développement. La conception est le suivi des équipements associés dans le respect des normes de sécurité en vigueur.",
+      "wer": 0.2,
+      "verdict": "Non conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\phrases_longues_0.mp3"
+    },
+    {
+      "category": "phrases_longues",
+      "reference_text": "Après plusieurs vérifications successives, l'équipe a confirmé que l'ensemble des paramètres de vol restait conforme aux valeurs attendues durant toute la phase de croisière.",
+      "transcribed_text": "Après plusieurs vérifications successives, l'équipe a confirmé que l'ensemble des paramètres de vol restait conforme aux valeurs attendues. Durant toute la phase de croisière.",
+      "wer": 0.0,
+      "verdict": "Conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\phrases_longues_1.mp3"
+    },
+    {
+      "category": "chiffres_et_nombres",
+      "reference_text": "Le vol décolle à 22 heures 29.",
+      "transcribed_text": "le vol décolle à 22h29.",
+      "wer": 0.4286,
+      "verdict": "Non conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\chiffres_et_nombres_0.mp3"
+    },
+    {
+      "category": "chiffres_et_nombres",
+      "reference_text": "L'altitude de croisière est de 11000 mètres.",
+      "transcribed_text": "L'altitude de croisière est de 11 000 mètres.",
+      "wer": 0.2857,
+      "verdict": "Non conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\chiffres_et_nombres_1.mp3"
+    },
+    {
+      "category": "chiffres_et_nombres",
+      "reference_text": "La température extérieure est de moins 54 degrés Celsius.",
+      "transcribed_text": "La température extérieure est de moins 54°C.",
+      "wer": 0.3333,
+      "verdict": "Non conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\chiffres_et_nombres_2.mp3"
+    },
+    {
+      "category": "sigles_et_acronymes",
+      "reference_text": "Le système ILS permet l'atterrissage automatique.",
+      "transcribed_text": "Le système il permet la thérissage automatique.",
+      "wer": 0.5,
+      "verdict": "Non conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\sigles_et_acronymes_0.mp3"
+    },
+    {
+      "category": "sigles_et_acronymes",
+      "reference_text": "L'OACI fixe les normes internationales de navigation aérienne.",
+      "transcribed_text": "l'OACI fixe les normes internationales de navigation aériennes.",
+      "wer": 0.125,
+      "verdict": "Conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\sigles_et_acronymes_1.mp3"
+    },
+    {
+      "category": "sigles_et_acronymes",
+      "reference_text": "Le contrôleur ATC a autorisé la descente.",
+      "transcribed_text": "le contrôleur attaissé à autoriser la descente.",
+      "wer": 0.4286,
+      "verdict": "Non conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\sigles_et_acronymes_2.mp3"
+    },
+    {
+      "category": "noms_propres",
+      "reference_text": "L'avion a décollé de l'aéroport Roissy Charles de Gaulle.",
+      "transcribed_text": "L'avion a décollé de l'aéroport Roissy Charles de Gaulle.",
+      "wer": 0.0,
+      "verdict": "Conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\noms_propres_0.mp3"
+    },
+    {
+      "category": "noms_propres",
+      "reference_text": "Le moteur CFM56 équipe de nombreux avions moyen-courriers.",
+      "transcribed_text": "Le moteur CFM56 équipe de nombreux avions moyen courrier.",
+      "wer": 0.25,
+      "verdict": "Non conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\noms_propres_1.mp3"
+    },
+    {
+      "category": "homographes_ambigus",
+      "reference_text": "Les poules du couvent couvent leurs œufs.",
+      "transcribed_text": "Les poules du couvent couvent leurs œufs.",
+      "wer": 0.0,
+      "verdict": "Conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\homographes_ambigus_0.mp3"
+    },
+    {
+      "category": "homographes_ambigus",
+      "reference_text": "Il est plus de dix heures, nous sommes en retard.",
+      "transcribed_text": "Il est plus de 10 heures, nous sommes en retard.",
+      "wer": 0.1,
+      "verdict": "Conforme",
+      "audio_path": "C:\\Users\\safawardi\\Documents\\side_projects\\assistant-ia-multimodal_4\\assistant-ia-multimodal\\src\\evaluation\\..\\..\\reports\\audio_samples\\homographes_ambigus_1.mp3"
+    }
+  ],
+  "summary": {
+    "phrases_courtes": {
+      "nombre_de_tests": 3,
+      "wer_moyen": 0.0,
+      "taux_de_conformite": 1.0
+    },
+    "phrases_longues": {
+      "nombre_de_tests": 2,
+      "wer_moyen": 0.1,
+      "taux_de_conformite": 0.5
+    },
+    "chiffres_et_nombres": {
+      "nombre_de_tests": 3,
+      "wer_moyen": 0.3492,
+      "taux_de_conformite": 0.0
+    },
+    "sigles_et_acronymes": {
+      "nombre_de_tests": 3,
+      "wer_moyen": 0.3512,
+      "taux_de_conformite": 0.3333
+    },
+    "noms_propres": {
+      "nombre_de_tests": 2,
+      "wer_moyen": 0.125,
+      "taux_de_conformite": 0.5
+    },
+    "homographes_ambigus": {
+      "nombre_de_tests": 2,
+      "wer_moyen": 0.05,
+      "taux_de_conformite": 1.0
+    }
+  }
+}

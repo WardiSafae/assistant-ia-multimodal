@@ -3,7 +3,7 @@ Tests unitaires pour la logique de découpage en chunks (pas de dépendance
 réseau ni de modèle — s'exécute rapidement en CI).
 """
 
-from src.backends.vector_rag.build_index import chunk_text
+from ..src.backends.vector_rag.build_index import chunk_text
 
 
 def test_chunk_text_short_text_returns_single_chunk():

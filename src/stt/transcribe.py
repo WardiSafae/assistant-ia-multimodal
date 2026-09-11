@@ -1,11 +1,11 @@
 """
 Module de transcription audio (Speech-to-Text) basé sur faster-whisper.
 
-Ce module est la brique commune aux trois angles de candidature :
-- Sia / Astek : transcrit la question orale de l'utilisateur avant de la router
-  vers le backend choisi (RAG ou graphe de connaissances).
-- OCTO : réutilisé "à l'envers" dans le module d'évaluation (étape 3) pour
-  retranscrire un audio généré par un système TTS et mesurer son intelligibilité.
+Ce module est la brique commune aux différents backends du pipeline :
+- Backends de récupération (RAG, graphe) : transcrit la question orale de
+  l'utilisateur avant de la router vers le backend choisi.
+- Module d'évaluation (étape 3) : réutilisé "à l'envers" pour retranscrire
+  un audio généré par un système TTS et mesurer son intelligibilité.
 """
 
 import os

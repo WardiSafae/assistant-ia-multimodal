@@ -1,0 +1,29 @@
+{
+  "phrases_courtes": [
+    "Bonjour, comment allez-vous ?",
+    "Le vol est prêt au décollage.",
+    "Merci de votre attention."
+  ],
+  "phrases_longues": [
+    "La direction technique et ingénierie assure le développement, la conception et le suivi des équipements associés dans le respect des normes de sécurité en vigueur.",
+    "Après plusieurs vérifications successives, l'équipe a confirmé que l'ensemble des paramètres de vol restait conforme aux valeurs attendues durant toute la phase de croisière."
+  ],
+  "chiffres_et_nombres": [
+    "Le vol décolle à 22 heures 29.",
+    "L'altitude de croisière est de 11000 mètres.",
+    "La température extérieure est de moins 54 degrés Celsius."
+  ],
+  "sigles_et_acronymes": [
+    "Le système ILS permet l'atterrissage automatique.",
+    "L'OACI fixe les normes internationales de navigation aérienne.",
+    "Le contrôleur ATC a autorisé la descente."
+  ],
+  "noms_propres": [
+    "L'avion a décollé de l'aéroport Roissy Charles de Gaulle.",
+    "Le moteur CFM56 équipe de nombreux avions moyen-courriers."
+  ],
+  "homographes_ambigus": [
+    "Les poules du couvent couvent leurs œufs.",
+    "Il est plus de dix heures, nous sommes en retard."
+  ]
+}
