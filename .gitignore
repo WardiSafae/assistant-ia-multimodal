@@ -19,3 +19,6 @@ reports/audio_samples/
 
 # OS
 .DS_Store
+debug_llm.py 
+debug_* 
+src/backends/knowledge_graph/index/ 

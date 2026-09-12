@@ -21,20 +21,25 @@ import re
 GRAPH_DIR = os.path.join(os.path.dirname(__file__), "index")
 CORPUS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "..", "data", "corpus")
 
-EXTRACTION_PROMPT = """Extrait les faits importants du texte ci-dessous sous forme \
-de triplets (sujet, relation, objet), en français, concis.
+EXTRACTION_PROMPT = """Extrait les faits importants du texte ci-dessous sous forme de triplets (sujet, relation, objet) en français.
 
-Règles :
-- Le sujet et l'objet doivent être des entités courtes (noms propres ou concepts clés).
-- La relation doit être un verbe ou une expression courte (ex. "utilise", "obtient", "fait partie de").
-- Réponds UNIQUEMENT avec une liste JSON, sans texte autour, au format :
-[{{"subject": "...", "relation": "...", "object": "..."}}, ...]
-- Limite-toi aux 8 faits les plus importants du texte.
+RÈGLES ABSOLUES :
+- Réponds UNIQUEMENT avec une liste JSON valide. AUCUN texte avant ou après.
+- N'écris PAS les règles, N'explique PAS, N'ajoute PAS de commentaires.
+- Format exact : [{{"subject": "...", "relation": "...", "object": "..."}}]
+- Maximum 8 triplets.
+- Le sujet et l'objet sont des entités COURTES (2 à 5 mots MAXIMUM).
+- La relation est un verbe court (ex: "utilise", "obtient", "fait partie de").
+- Ne répète pas les mêmes informations dans plusieurs triplets.
 
-Texte :
+EXEMPLE :
+Texte : "Le projet X utilise Python et obtient un R² de 0.95."
+Réponse : [{{"subject": "projet X", "relation": "utilise", "object": "Python"}}, {{"subject": "projet X", "relation": "obtient", "object": "R² de 0.95"}}]
+
+Texte à analyser :
 {text}
 
-Liste JSON de triplets :"""
+JSON :"""
 
 
 def parse_triples_response(raw_response: str) -> list[dict]:
